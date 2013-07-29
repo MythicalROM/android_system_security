@@ -33,7 +33,7 @@ LOCAL_SRC_FILES := keymaster_openssl.cpp
 LOCAL_C_INCLUDES := \
 	system/security/keystore \
 	external/openssl/include
-LOCAL_CFLAGS = -fvisibility=hidden -Wall -Werror
+LOCAL_CFLAGS = -fvisibility=hidden -Wall -Wno-error
 LOCAL_SHARED_LIBRARIES := libcrypto liblog libkeystore_binder
 LOCAL_MODULE_TAGS := optional
 LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/include
